@@ -28,7 +28,7 @@ jobs:
         # Hint: Checkout is needed so that semgrep can access your repo code
 
       - name: SemgrepScan        # Options: choose any name you want. This step scans our code. 
-        run: semgrep scan --sarif --sarif-output=semgrep.sarif || true 
+        run: semgrep scan --sarif --sarif-output=semgrep.sarif --error
                                      # Options: 
                                      # semgrep scan --sarif --sarif-output=semgrep.sarif --error
                                      # semgrep scan --sarif --sarif-output=semgrep.sarif || true 
